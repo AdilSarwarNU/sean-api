@@ -9,15 +9,8 @@ const router = require('./src/endpoints');
 
 const app = express();
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(helmet());
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-
 if (process.env.NODE_ENV === 'production' && process.env.HTTPS_ENABLE_REDIRECT) {
+  app.use(helmet());
   app.use((req, res, next) => {
     if (!req.secure) {
       return res.redirect(['https://', req.get('Host'), req.url].join(''));
@@ -25,6 +18,11 @@ if (process.env.NODE_ENV === 'production' && process.env.HTTPS_ENABLE_REDIRECT) 
     return next();
   });
 }
+
+app.use(logger(process.env.LOG_FORMAT || 'dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 router(app);
 
