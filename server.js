@@ -3,12 +3,12 @@ const debug = require('debug')('server');
 
 module.exports = {
   start: (port) => {
-    const app = require('../app');
+    const app = require('./app');
     app.set('port', port);
 
     var server = http.createServer(app);
     server.on('error', onError);
-    server.on('listening', onListening);
+    server.on('listening', () => { onListening(server); });
     server.listen(port);
     return server;
   }
@@ -46,7 +46,7 @@ function onError(error) {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening() {
+function onListening(server) {
   var addr = server.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
