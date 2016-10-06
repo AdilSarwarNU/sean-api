@@ -10,6 +10,26 @@ SEAN stands for Sequelize, ExpressJS, AngularJS and NodeJS.
 - Mocha + Chai HTTP for automated API testing and TDD.
 - [Sequelize](http://sequelizejs.com/) as ORM for supporting several RDBMS dialects.
 
+## Commands
+
+### Starting Server
+
+To run the server, use the command:
+
+    $ node start
+
+When in development mode, you can use (nodemon)[https://github.com/remy/nodemon] by running the gulp task:
+
+    $ gulp
+
+### Running Tests
+
+To run the tests, use the command:
+
+    $ node test
+
+The tests will launch a single-thread instance of the server listening at the port defined by `PORT` environment variable.
+
 ## Configuration
 
 The stack can be configured using the a few environment variables. In the event that modifying environment variables is difficult (such as on Windows), `dotenv` is enabled and you can create a `.env` file on the application root and place the variables in the file.
