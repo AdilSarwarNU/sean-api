@@ -19,6 +19,8 @@ module.exports = (app) => {
         });
     }
 
-    res.status(406);
+    res
+      .status(406)
+      .send('Page not found');
   });
 };
