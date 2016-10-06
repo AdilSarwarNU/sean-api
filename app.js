@@ -19,7 +19,9 @@ if (process.env.NODE_ENV === 'production' && process.env.HTTPS_ENABLE_REDIRECT) 
   });
 }
 
-app.use(logger(process.env.LOG_FORMAT || 'dev'));
+if (!process.env.LOG_SILENT) {
+  app.use(logger(process.env.LOG_FORMAT || 'dev'));
+}
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
