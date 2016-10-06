@@ -20,7 +20,9 @@ To run the server, use the command:
 
     $ node start
 
-When in development mode, you can use (nodemon)[https://github.com/remy/nodemon] by running the gulp task:
+Running the server by default will launch multi-threaded version even in development mode.
+
+When in development mode, you can use [nodemon](https://github.com/remy/nodemon) by running the gulp task:
 
     $ gulp
 
