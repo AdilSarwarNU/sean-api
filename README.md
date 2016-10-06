@@ -20,6 +20,7 @@ The stack can be configured using the a few environment variables. In the event 
 | `DB_PASS` | String | `null` | The password for the database connection. |
 | `DB_CONFIG` | JSON String | `null` | The configuration object accepted by Sequelize. You can configure what flavour of database to use in this parameter. |
 | `LOG_FORMAT` | String | `'dev'` | The log format to print using Morgan for HTTP requests and responses. See https://github.com/expressjs/morgan |
+| `LOG_SILENT` | Boolean | `false` | Whether request logs should be printed. |
 | `HTTPS_ENABLE_REDIRECT` | Boolean | `false` | Whether switch the protocol for HTTPS if the current traffic is on HTTP.
 | `SINGLE_THREAD` | Boolean | `false` | Whether or not to use a single thread. |
 
