@@ -2,6 +2,8 @@
 
 SEAN stands for Sequelize, ExpressJS, AngularJS and NodeJS.
 
+This repository serves the server/API-side of the stack, where you can use its advanced features to build really neat RESTful APIs. In fact, it can be used by any frontend application speaking JSON to the server application.
+
 - For NodeJS >= 6.0 only.
 - Easily configurable via environment variables (or using [dotenv](https://github.com/motdotla/dotenv))
 - Uses cluster for taking advantage of multi-core systems
