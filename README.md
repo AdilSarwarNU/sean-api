@@ -3,8 +3,12 @@
 SEAN stands for Sequelize, ExpressJS, AngularJS and NodeJS.
 
 - For NodeJS >= 6.0 only.
-- Uses Cluster for taking advantage of multi-core systems
+- Easily configurable via environment variables (or using [dotenv](https://github.com/motdotla/dotenv))
+- Uses cluster for taking advantage of multi-core systems
 - Lean clean separation from front-end.
+- [JSON Web Tokens](https://jwt.io/) available for API authentication
+- Mocha + Chai HTTP for automated API testing and TDD.
+- [Sequelize](http://sequelizejs.com/) as ORM for supporting several RDBMS dialects.
 
 ## Configuration
 
@@ -25,4 +29,4 @@ The stack can be configured using the a few environment variables. In the event 
 | `SINGLE_THREAD` | Boolean | `false` | Whether or not to use a single thread. |
 
 ## License
-The source code in this repository is licensed under MIT License.
+Code released licensed under MIT License.
