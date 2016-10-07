@@ -5,7 +5,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-const router = require('./src/endpoints');
+const router = require('./endpoints');
 
 const app = express();
 
