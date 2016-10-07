@@ -37,7 +37,7 @@ if (cluster.isMaster && !process.env.SINGLE_THREAD) {
   }
 } else {
   console.log('[INFO] Worker %d #%d running!', cluster.worker.id, cluster.worker.process.pid);
-  const server = require('../server');
+  const server = require('../src/server');
   server.start(port);
 }
 

@@ -1,4 +1,4 @@
-const server = require('../server');
+const server = require('../src/server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const should = chai.should();
@@ -40,7 +40,7 @@ describe('Errors', () => {
         });
     });
   });
-  
+
   describe('/GET HTML 406 route', () => {
     it('it should return error message', (done) => {
       chai.request(serverInstance)
