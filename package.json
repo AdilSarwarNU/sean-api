@@ -1,8 +1,8 @@
 {
-  "name": "sean-api-skeleton",
+  "name": "sean-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/www",
   "scripts": {
     "start": "node bin/www",
     "test": "mocha"
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/sean-js/sean-api.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sam Yong",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sean-js/sean-api/issues"
   },
