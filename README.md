@@ -18,7 +18,7 @@ This repository serves the server/API-side of the stack, where you can use its a
 
 To run the server, use the command:
 
-    $ node start
+    $ npm start
 
 Running the server by default will launch multi-threaded version even in development mode.
 
@@ -30,7 +30,7 @@ When in development mode, you can use [nodemon](https://github.com/remy/nodemon)
 
 To run the tests, use the command:
 
-    $ node test
+    $ npm test
 
 The tests will launch a single-thread instance of the server listening at the port defined by `PORT` environment variable.
 
