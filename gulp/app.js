@@ -11,7 +11,7 @@ var $ = require('gulp-load-plugins')({
    * The start task will perform the default preparation of assets,
    * then launch nodemon for the server
    */
-  gulp.task('nodemon', function(){
+  gulp.task('nodemon', () => {
     return $.nodemon({
       "script": 'bin/www',
       "ignore": [
