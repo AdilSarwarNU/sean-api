@@ -18,7 +18,7 @@ This repository serves the server/API-side of the stack, where you can use its a
 
 To start using the stack, you need several dependencies installed globally and accessible in your command line  interface / terminal:
 
-    $ npm -g install bower gulp mocha
+    $ npm -g install gulp mocha
 
 ### Starting Server
 
