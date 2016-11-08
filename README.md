@@ -1,4 +1,4 @@
-# SEAN Stack for API-based apps [![CI Status](https://travis-ci.org/sean-js/sean-api.svg?branch=master)](https://travis-ci.org/sean-js/sean-api)
+# SEAN Stack for API-based apps [![CI Status](https://travis-ci.org/sean-js/sean-api.svg?branch=master)](https://travis-ci.org/sean-js/sean-api) ![Dependencies](https://david-dm.org/sean-js/sean-api.svg)
 
 SEAN stands for Sequelize, ExpressJS, AngularJS and NodeJS.
 
